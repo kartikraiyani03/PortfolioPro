@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioPro : Kartik Raiyni</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<style>
+    .frame {
+        animation: linear 4s animate1 infinite;
+    }
+
+    @keyframes animate1 {
+        0% {
+            scale: 1.0;
+        }
+
+        50% {
+            scale: 1.1;
+        }
+
+        100% {
+            scale: 1.0;
+        }
+    }
+
+    .frame2 {
+        animation: linear 4s animate2 infinite;
+    }
+
+    @keyframes animate2 {
+        0% {
+            scale: 1.0;
+        }
+
+        50% {
+            scale: 1.4;
+        }
+
+        100% {
+            scale: 1.0;
+        }
+    }
+
+    .cube {
+        animation: linear 5s rotate infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateY(0deg) translateY(0px);
+        }
+
+        50% {
+            transform: rotateY(180deg) translateY(20px);
+        }
+
+        0% {
+            transform: rotateY(360deg) translateY(0px);
+
+        }
+    }
+
+    .bubble {
+        animation: linear 4s move infinite;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(20px) translateX(20px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+</style>
+
+<body>
+
+    <div class="w-full">
+        <!--Navbar-->
+        <header class="relative mx-auto">
+            <nav class="w-11/12 flex justify-between items-center m-3 px-4 mx-auto sm:w-9/12 md:9/12">
+                <div class="">
+                    <h1 class="text-4xl lg:text-5xl">P<span class="text-2xl text-black lg:text-3xl">ortfolio</span></h1>
+                    <div class="h-1 w-20 ml-1 bg-red-500"></div>
+                </div>
+                <div class="hidden sm:block sm:mx-8 mt-4 md:mx-9 ">
+                    <a href="#project"
+                        class="mx-2 hover:border-2 hover:border-t-0 hover:border-l-0 hover:border-r-0  hover:border-b-red-500 py-1 lg:mx-4 lg:text-lg">Projects</a>
+                    <a href="#skill"
+                        class="mx-2 hover:border-2 lg:mx-4 lg:text-lg hover:border-t-0 hover:border-l-0 hover:border-r-0  hover:border-b-red-500 py-1">Skills</a>
+                    <a href="#contact"
+                        class="mx-2 hover:border-2 lg:mx-4 lg:text-lg hover:border-t-0 hover:border-l-0 hover:border-r-0  hover:border-b-red-500 py-1">Contact</a>
+                </div>
+                <div class="sm:hidden mt-1 ">
+                    <img src="./photos/stack/menu.png" class="h-6 " id="menubtn" alt="">
+                </div>
+            </nav>
+            <div id="hide"
+                class="hidden sm:hidden absolute shadow--2xl left-[1rem] bg-gray-100 top-[4rem] mx-auto w-11/12 ">
+                <ul class="flex flex-col text-md justify-between shadow--2xl shadow-black h-[100px] items-start m-3">
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!--Hero Section-->
+        <div id="hero"
+            class="sm:w-10/12 sm:mx-auto w-full lg:w-9/12 sm:mt-[120px] flex flex-col  lg:mx-auto sm:flex-row sm:justify-between sm:items-center mt-[50px] lg:mt-[80px] mx-auto lg:justify-start lg:items-start">
+            <div class=" mx-auto flex flex-col justify-between 
+                lg:w-8/12 lg:mx-auto lg:flex lg:justify-start lg:items-start   
+                md:justify-start md:space-y-[30px] md:w-9/12
+                sm:mt-[80px] md:mt-[100px] items-center sm:items-start sm:flex-rows sm:w-9/12">
+
+                <h1 class="text-3xl sm:text-4xl sm:text-start">Hi ! Kartik Raiyani</h1>
+                <h1 class="text-4xl sm:text-start text-center my-5 lg:my-2 md:my-2 lg:text-5xl  sm:text-4xl">I am a
+                    <span class="role text-[#4e45d5]"></span>
+                </h1>
+                <p class="w-9/12 text-lg sm:text-xl text-center sm:text-start">I am always enthusiastic about
+                    undertaking new projects
+                    and embracing emerging technologies in my field, aiming to enhance both my
+                    personal growth and the value I bring to my company.</p>
+
+                <button class="bg-red-500 text-white px-10 py-2 mt-[20px] border-2 border-red-500 hover:border-2 duration-500 hover:border-red-500 hover:text-red-500 hover:bg-white
+                ">Hire me </button>
+            </div>
+
+            <div class="w-full h-[370px] relative mx-auto
+             lg:w-[500px] lg:h-[480px] sm:mx-auto p-10
+             sm:w-9/12">
+
+                <div class="h-[300px] absolute left-10 w-[300px] lg:w-[380px] lg:h-[380px] shadow-2xl shadow-black frame
+                ">
+                    <img src="./photos//userAsset/tm2.jpg" class="w-[250px] lg:w-[330px] absolute top-6 left-6" alt="">
+                </div>
+
+                <img src="./photos/userAsset/zigzags.png" alt="" class="frame2 absolute h-[80px] left-6 top-6">
+
+                <img src="./photos/userAsset/cube.png"
+                    class="frame2 cube absolute right-[3rem] top-0 sm:right-[3rem] sm:top-[1rem]" alt="">
+
+                <img src="./photos/userAsset/plus.png" class="frame2 absolute left-[11rem] top-[2rem]" alt="">
+
+                <img src="./photos/userAsset/circle.png" class="frame2 absolute bottom-[1rem] lg:bottom-[2rem]" alt="">
+
+                <img src="./photos/userAsset/dots.png"
+                    class="frame2 absolute bottom-0 h-[40px] lg:bottom-[1rem] lg:h-[50px] lg:right-[2rem] right-[2rem] "
+                    alt="">
+
+
+            </div>
+        </div>
+
+        <!--Project Section-->
+        <div class="relative mt-[30px] lg:mt-[80px]" id="project">
+            <h1
+                class="absolute text-gray-200 -bottom-1 lg:-bottom-3 lg:left-[3rem] text-4xl md:text-6xl lg:text-8xl font-bold">
+                Kartik Raiyani</h1>
+        </div>
+        <div class="bg-gray-200 w-full lg:mb-[50px]" id="#project">
+            <h1 class="text-red-500 text-4xl text-center py-9 lg:text-6xl lg:mb-[50px]">Projects</h1>
+            <div class="flex flex-col space-y-10 w-full mx-auto border-0 border-black">
+
+                <div class="project1 flex lg:w-10/12 md:11/12 sm:w-full lg:justify-between lg:mx-auto items-center">
+                    <div class="relative sm:h-[450px] rounded-lg h-[250px] lg:h-[450px]">
+                        <img src="./photos/projects/01.jpg"
+                            class="sm:h-[450px] rounded-lg h-[250px] lg:h-[450px] sm:w-[1024px] lg:w-[850px] brightness-50"
+                            alt="">
+                        <div
+                            class="scale-90 brightness-100 sm:scale-90  hover:scale-100 transition-all duration-500  space-y-2 absolute pt-10 top-0 left-[2rem] sm:top-[4rem] sm:w-11/12 lg:top-[4rem] lg:left-[6rem] lg:w-8/12">
+                            <div class="flex space-x-3">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/HTML.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/CSS.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/Javascript.svg"
+                                    alt="">
+                            </div>
+                            <h1 class="text-xl sm:text-5xl lg:text-7xl text-white font-bold">Muzistic</h1>
+                            <p class="text-xs sm:text-lg lg:text-lg text-white font-bold"> Immerse yourself in song
+                                playback
+                                controls and a captivating homepage design curated to suit your individual
+                                preferences. </p>
+                            <div class="flex justify-start space-x-5 items-center">
+                                <button class="bg-red-500 text-white px-5 py-2 mt-[20px] border-2 border-red-500 hover:border-2 duration-500 hover:border-red-500 hover:text-red-500 hover:bg-white
+                        ">Read More</button>
+                                <a href="https://github.com/kartikraiyani03/Muzistic-Online-Music-Player-Web-Application">
+                                    <img class="mt-3 bg-white rounded-full hover:bg-red-500 sm:h-[30px] border-none  h-[25px] lg:h-[40px]"
+                                        src="./photos/userAsset/github.png" alt="">
+                                    </a>
+                                <a href="https://muzistic.netlify.app/">
+                                    <img class="border-none mt-3 rounded-full  bg-white hover:bg-red-500 sm:h-[30px] h-[25px] lg:h-[40px]"
+                                        src="./photos/userAsset/link.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden hover:scale-110 duration-500 lg:block sm:top-0 sm:right-0 text-9xl">0<span
+                            class="text-red-500">1</span>
+                    </div>
+                </div>
+                <div class="project2 flex lg:w-10/12 md:11/12 sm:w-full lg:justify-between items-center lg:mx-auto">
+                    <div class="hidden hover:scale-110 duration-500 lg:block sm:top-0 sm:right-0 text-9xl">0<span
+                            class="text-red-500">2</span>
+                    </div>
+                    <div class="relative sm:h-[450px] rounded-lg h-[250px] lg:h-[450px]">
+                        <img src="./photos/projects/02.jpg"
+                            class="sm:h-[450px] rounded-lg h-[250px] lg:h-[450px] sm:w-[1024px] lg:w-[900px] brightness-50"
+                            alt="">
+                        <div
+                            class="scale-90 brightness-100 sm:scale-90 hover:scale-100 transition-all duration-500  space-y-2 absolute pt-10 sm:top-[4rem] sm:w-11/12 top-0 left-[2rem] lg:top-[4rem] lg:left-[6rem] lg:w-8/12">
+                            <div class="flex space-x-3">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/HTML.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/CSS.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/Javascript.svg"
+                                    alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/React.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[50px]" src="./photos/stack/Tailwind.png" alt="">
+                            </div>
+                            <h1 class="text-xl sm:text-5xl lg:text-7xl text-white font-bold">Need For You</h1>
+                            <p class="text-xs sm:text-lg lg:text-lg text-white font-bold"> Developed a counseling
+                                website using a technology stack that included
+                                HTML, CSS, and JavaScript for core front-end functionality. </p>
+                            <div class="flex justify-start space-x-5 items-center">
+                                <button class="bg-red-500 text-white px-5 py-2 mt-[20px] border-2 border-red-500 hover:border-2 duration-500 hover:border-red-500 hover:text-red-500 hover:bg-white
+                        ">Read More</button>
+                        <a href="https://github.com/kartikraiyani03/Need-For-You-Project">
+                            <img class="mt-3 bg-white rounded-full hover:bg-red-500 sm:h-[30px] border-none  h-[25px] lg:h-[40px]"
+                                src="./photos/userAsset/github.png" alt="">
+                            </a>
+                        <a href="https://incandescent-twilight-483918.netlify.app/">
+                            <img class="border-none mt-3 rounded-full  bg-white hover:bg-red-500 sm:h-[30px] h-[25px] lg:h-[40px]"
+                                src="./photos/userAsset/link.png" alt="">
+                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project3 flex lg:w-10/12 md:11/12 sm:w-full lg:justify-between items-center lg:mx-auto">
+                    <div class="relative sm:h-[450px] rounded-lg h-[250px] lg:h-[450px]">
+                        <img src="./photos/projects/03.jpg"
+                            class="sm:h-[450px] rounded-lg h-[250px] lg:h-[450px] sm:w-[1024px] lg:w-[850px] brightness-50"
+                            alt="">
+                        <div
+                            class="scale-90 brightness-100 sm:scale-90 hover:scale-100 transition-all duration-500 space-y-2 absolute sm:top-[4rem] sm:w-11/12 pt-10 top-0 left-[2rem] lg:top-[4rem] lg:left-[6rem] lg:w-8/12">
+                            <div class="flex space-x-3">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/HTML.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/CSS.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[50px]" src="./photos/stack/Tailwind.png" alt="">
+                            </div>
+                            <h1 class="text-xl sm:text-5xl lg:text-7xl text-white font-bold">RazorPay Clone</h1>
+                            <p class="text-xs sm:text-lg lg:text-lg text-white font-bold"> The project involves
+                                replicating the RazorPay payment gateway interface using HTML for structure, Tailwind
+                                CSS for styling </p>
+                            <div class="flex justify-start space-x-5 items-center">
+                                <button class="bg-red-500 text-white px-5 py-2 mt-[20px] border-2 border-red-500 hover:border-2 duration-500 hover:border-red-500 hover:text-red-500 hover:bg-white
+                        ">Read More</button>
+                        <a href="https://github.com/kartikraiyani03/NineTailwind">
+                            <img class="mt-3 bg-white rounded-full hover:bg-red-500 sm:h-[30px] border-none  h-[25px] lg:h-[40px]"
+                                src="./photos/userAsset/github.png" alt="">
+                            </a>
+                        <a href="https://kartikraiyani03.github.io/NineTailwind/">
+                            <img class="border-none mt-3 rounded-full  bg-white hover:bg-red-500 sm:h-[30px] h-[25px] lg:h-[40px]"
+                                src="./photos/userAsset/link.png" alt="">
+                        </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden hover:scale-110 duration-500 lg:block sm:top-0 sm:right-0 text-9xl">0<span
+                            class="text-red-500">3</span>
+                    </div>
+                </div>
+
+                <div class="project4 flex lg:w-10/12 md:11/12 sm:w-full lg:justify-between items-center lg:mx-auto">
+                    <div class="hidden hover:scale-110 duration-500 lg:block sm:top-0 sm:right-0 text-9xl">0<span
+                            class="text-red-500">4</span>
+                    </div>
+                    <div class="relative lg:mb-[100px]  sm:h-[450px] rounded-lg h-[250px] lg:h-[450px]">
+                        <img src="./photos/projects/04.jpg"
+                            class="sm:h-[450px] rounded-lg h-[250px] lg:h-[450px] brightness-50 lg:w-[850px] sm:w-[1024px]"
+                            alt="">
+                        <div
+                            class="scale-90 brightness-100 sm:scale-90 hover:scale-100 transition-all duration-500 space-y-2 absolute sm:top-[4rem] sm:w-11/12 pt-10 top-0 left-[2rem] lg:top-[4rem] lg:left-[3rem] lg:w-10/12">
+                            <div class="flex space-x-3">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/HTML.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/CSS.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/Javascript.svg"
+                                    alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/React.png" alt="">
+                                <img class="h-[20px] sm:h-[30px] lg:h-[40px]" src="./photos/stack/Redux.svg" alt="">
+                            </div>
+                            <h1 class="text-xl sm:text-5xl lg:text-7xl text-white font-bold">Ecomzy Shopping</h1>
+                            <p class="text-xs sm:text-lg lg:text-lg text-white font-bold">Introducing Ecompzy, a online
+                                shopping destination meticulously crafted
+                                with HTML, CSS, and JavaScript, bolstered by the React JS library and React
+                                Redux. </p>
+                            <div class="flex justify-start space-x-5 items-center">
+                                <button class="bg-red-500 text-white px-5 py-2 mt-[20px] border-2 border-red-500 hover:border-2 duration-500 hover:border-red-500 hover:text-red-500 hover:bg-white
+                        ">Read More</button>
+                        <a href="https://github.com/kartikraiyani03/ECOMZY-ShopeApp-Redux">
+                            <img class="mt-3 bg-white rounded-full hover:bg-red-500 sm:h-[30px] border-none  h-[25px] lg:h-[40px]"
+                                src="./photos/userAsset/github.png" alt="">
+                            </a>
+                        <a href="https://brilliant-concha-27c25a.netlify.app/">
+                            <img class="border-none mt-3 rounded-full  bg-white hover:bg-red-500 sm:h-[30px] h-[25px] lg:h-[40px]"
+                                src="./photos/userAsset/link.png" alt="">
+                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Tech Stacks-->
+        <div class="w-11/12 relative lg:w-10/12 lg:mx-auto ml-[30px] mx-auto my-10 lg:mb-[50px]" id="skill">
+
+            <h1 class="absolute text-gray-200 lg:-bottom-[4rem] lg:right-0 text-4xl md:text-6xl lg:text-9xl font-bold">
+                Skills</h1>
+
+            <h1 class="text-red-500 lg:w-11/12 w-11/12 mx-auto text-6xl lg:text-7xl lg:mb-[30px]">M<span
+                    class="text-red-500 text-5xl text-center">e and MyTech
+                    Stack</span></h1>
+
+            <div
+                class="flex flex-col sm:flex-col  text-start mx-auto w-11/12 mt-10 lg:full md:flex-row lg:flex-row lg:justify-between lg:items-center">
+
+                <div class="w-11/12 lg:w-7/12 space-y-8 text-md">
+                    <p class="my-3">Hi Everyone My name is Kartik Raiyani</p>
+                    <p class="my-3">As a MERN Stack Developer, I thrive at the intersection of creativity and
+                        functionality, crafting digital experiences that resonate with users and drive business
+                        objectives. With a blend of technical expertise and a passion for design, I bring projects to
+                        life from concept to completion, focusing on intuitive user interfaces, efficient backend
+                        systems, and seamless interactions.</p>
+                    <p class="my-3">As a MERN Stack Developer, I bring a unique blend of technical expertise, creative
+                        vision, and collaborative spirit to every project I undertake. With a commitment to excellence,
+                        a dedication to continuous learning, and a passion for innovation, I am ready to tackle the
+                        challenges of tomorrow's web development landscape and deliver exceptional results.</p>
+                </div>
+                <div class="flex w-11/12 lg:w-7/12 flex-col mt-10 space-y-7 relative">
+                    <img src="./photos/stack//blob vector.png"
+                        class="absolute -z-20 top-[3rem] h-[250px] left-0 lg:top-[5rem] bubble sm:left-[9rem]" alt="">
+                    <div class="flex justify-evenly ">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/HTML.png"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/CSS.png"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500"
+                            src="./photos/stack/Javascript.svg" alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/Tailwind.png"
+                            alt="">
+                    </div>
+                    <div class="flex   justify-evenly">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/React.png"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/NodeJs.svg"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/Express.png"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/MongoDB.svg"
+                            alt="">
+                    </div>
+                    <div class="flex   justify-evenly">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500"
+                            src="./photos/stack/Bootstrap.svg" alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500"
+                            src="./photos/stack/icons8-angular-96.png" alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/Redux.svg"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/php.png"
+                            alt="">
+                    </div>
+                    <div class="flex   justify-evenly">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/java.png"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/Git.svg"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/Github.svg"
+                            alt="">
+                        <img class="h-[50px] lg:h-[70px] hover:scale-125 duration-500" src="./photos/stack/Vercel.svg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact Section-->
+        <div class="relative w-full bg-gray-200 " id="contact">
+            <div class="w-11/12 mx-auto lg:w-7/12 lg:mx-auto md:w-8/12 md:mx-auto sm:10/12">
+                <h1 class="text-red-500 text-5xl text-center my-5 py-5">Contact Me</h1>
+                <h1 class="text-gray-500 text-3xl text-center mb-[50px]">Questions, Thoughts Or just want to say Hello?
+                </h1>
+                <form action="" class="space-y-5">
+                    <input class="w-full border-none px-4 shadow-md shadow-gray-500 text-lg py-2" type="text"
+                        placeholder="Name">
+                    <input class="w-full border-none px-4 shadow-md shadow-gray-500 text-lg py-2" type="email"
+                        placeholder="Email">
+                    <input class="w-full border-none px-4 shadow-md shadow-gray-500 text-lg py-2" type="text"
+                        placeholder="Subject">
+                    <input class="w-full border-none px-4 shadow-md shadow-gray-500 text-lg py-10 text-start"
+                        type="textarea" placeholder="Messsage">
+                </form>
+                <button
+                    class="w-full border-red-500 border-2 hover:bg-white my-10 hover:text-red-500 hover:border-2 hover:border-red-500 mx-auto bg-red-500 text-white py-3 text-center">Send
+                    Message</button>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <div class="bg-[#343d68] mt-1 flex flex-col text-white py-5 md:pt-12 md:py-8 ">
+
+            <div class="w-[330px] mx-auto md:w-9/12 md:flex md:flex-row">
+                <ul class="flex justify-between mx-auto mb-5 lg:space-x-6
+                md:justify-center md:flex md:space-x-4">
+                    <li class="text-xl">Projects</li>
+                    <li class="text-xl">Skills</li>
+                    <li class="text-xl">Contact Me</li>
+                </ul>
+
+                <div class="flex mx-auto w-[330px] justify-between md:justify-center md:flex md:space-x-4 lg:space-x-6 my-2">
+                    <img src="./photos/stack/github.png" class="h-[35px] md:h-[30px]" alt="">
+                    <img src="./photos/userAsset/twitter (1).png" class="h-[35px] md:h-[30px]" alt="">
+                    <img src="./photos/userAsset/linkedin (1).png" class="h-[32px] md:h-[30px]" alt="">
+                    <img src="./photos/userAsset/instagram (1).png" class="h-[32px] md:h-[30px]" alt="">
+                    <img src="./photos/userAsset/mail.png" class="h-[39px] md:h-[30px]" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+
+    let typeData = new Typed('.role',
+        {
+            strings:
+                [
+                    "MERN Stack Developer",
+                    "DSA Learner",
+                    "JAVA Programmer"
+                ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000
+        })
+
+    let hide = document.getElementById('hide')
+    let hero = document.getElementById('hero')
+
+    document.getElementById('menubtn').addEventListener('click', () => {
+        console.log("clicked")
+        hide.classList.toggle('hidden')
+        hide.classList.toggle('block')
+
+        console.log("hello1")
+        hero.classList.toggle('mt-[160px]')
+        console.log("hello2")
+
+        let img = document.getElementById('menubtn')
+        let menu = './photos/stack/menu.png'
+        let close = './photos/userAsset/close.png'
+        menubtn.setAttribute('src', img.getAttribute('src') == menu ? close : menu)
+
+    })
+</script>
+
+</html>
